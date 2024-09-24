@@ -4,7 +4,7 @@
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>My Portfolio</title>
+    <title>Phong Profile</title>
     <link rel="stylesheet" href="style.css"/>
     <link rel="stylesheet" href="mediaqueries.css"/>
 </head>
@@ -327,6 +327,17 @@
             />
             <p><a href="mailto:phongton219@gmail.com">phongton219@gmail.com</a></p>
         </div>
+
+    </div>
+    <div class="contact-info-upper-container">
+    <div class="contact-info-container">
+        <img
+                src="./assets/call.png"
+                alt="call icon"
+                class="icon contact-icon call-icon"
+        />
+        <p onclick="copyToClipboard('0766521871')" style="cursor: pointer;">0766521871</p>
+    </div>
     </div>
 </section>
 <footer>
@@ -342,5 +353,12 @@
     </nav>
 </footer>
 <script src="script.js"></script>
+<script>
+    function copyToClipboard(text) {
+        navigator.clipboard.writeText(text).then(() => {
+            alert('Số điện thoại đã được sao chép!');
+        });
+    }
+</script>
 </body>
 </html>
